@@ -1,0 +1,482 @@
+<html>
+    <head>
+        <title>
+            Shopping Project
+        </title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="Shopping.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <style>
+            .carousel-inner
+            {
+                height: 300px;
+            }
+
+            img 
+            {
+                width: 90%;
+                height: 200px;
+            }
+            menu-sidebar d-none d-lg-block 
+            {
+                display: block;
+                color: #555;
+                font-size: 20px;
+                padding: 15px 0;
+            }
+            a 
+            {
+                color: #121314;
+            }
+            li
+            {
+                font-family: cursive;
+            }
+        </style>
+    </head>
+    
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid" style="background-color:darkgrey">
+                <a class="navbar-brand" style="font-family: fantasy;" href="#"> Welcome to Shopping World</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="AboutUs.html">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Categories
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Cloths</a></li>
+                                <li><a class="dropdown-item" href="#">Electronics action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="RegistrationForm.html">Registration</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="LoginForm.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="ContactUs.html">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div>
+            <marquee style="height: 20px">
+                <p>
+                    <b>
+                        Today Best Offer 20% OFF for HDFC Card users
+                    </b>
+                </p>
+            </marquee>
+        </div>
+        <!-- Code for Corausel-->
+        <div id="carouselExampleIndicators" class="carousel slide" style="height:200px" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="NSWeb.avif" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item img">
+                    <img src="OnlineShopping1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="OnlineShopping4.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 " style="margin-top: 40px;">
+       
+                  <!-- sidenav code-->
+
+                    <aside id="sidebar" class="sidebar">
+
+                        <ul class="sidebar-nav" id="sidebar-nav">
+
+                            <li class="nav-item">
+                                <a class="nav-link " href="index.html">
+                                    <i class="bi bi-grid"></i>
+                                    <span>Popular</span>
+                                </a>
+                            </li><!-- End Dashboard Nav -->
+                            <li class="nav-heading">Garments</li>
+
+                            <li class="nav-item">
+                                <a class="nav-link collapsed" href="Women.html">
+                                    <i class="bi bi-person"></i>
+                                    <span>Women Ethenic</span>
+                                </a>
+                            </li><!-- End Profile Page Nav -->
+
+                            <li class="nav-item">
+                                <a class="nav-link collapsed" href="Men.html">
+                                    <i class="bi bi-question-circle"></i>
+                                    <span>Men</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link collapsed" href="Kids.html">
+                                    <i class="bi bi-question-circle"></i>
+                                    <span>Kids</span>
+                                </a>
+                            </li>
+                            <!-- End F.A.Q Page Nav -->
+                            <li class="nav-heading">Electronics</li>
+
+                            <li class="nav-item">
+                                <a class="nav-link collapsed" href="Electronic.html">
+                                    <i class="bi bi-person"></i>
+                                    <span>Mobile</span>
+                                </a>
+                            </li><!-- End Profile Page Nav -->
+
+                            <li class="nav-item">
+                                <a class="nav-link collapsed" href="pages-faq.html">
+                                    <i class="bi bi-question-circle"></i>
+                                    <span>Laptop</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link collapsed" href="pages-faq.html">
+                                    <i class="bi bi-question-circle"></i>
+                                    <span>TV</span>
+                                </a>
+                            </li>
+
+
+
+                            <li class="nav-heading">Home & Kitchen</li>
+
+                            <li class="nav-item">
+                                <a class="nav-link collapsed" href="users-profile.html">
+                                    <i class="bi bi-person"></i>
+                                    <span>Kitchen Tool</span>
+                                </a>
+                            </li><!-- End Profile Page Nav -->
+
+                            <li class="nav-item">
+                                <a class="nav-link collapsed" href="pages-faq.html">
+                                    <i class="bi bi-question-circle"></i>
+                                    <span>Appliences</span>
+                                </a>
+                            </li><!-- End F.A.Q Page Nav -->
+
+                            <li class="nav-heading">Bags and Footware</li>
+
+                            <li class="nav-item">
+                                <a class="nav-link collapsed" href="users-profile.html">
+                                    <i class="bi bi-person"></i>
+                                    <span>Hand Bag & Cluthes</span>
+                                </a>
+                            </li><!-- End Profile Page Nav -->
+
+                            <li class="nav-item">
+                                <a class="nav-link collapsed" href="pages-faq.html">
+                                    <i class="bi bi-question-circle"></i>
+                                    <span>Women Footware</span>
+                                </a>
+                            </li><!-- End F.A.Q Page Nav -->
+
+
+                            <li class="nav-item">
+                                <a class="nav-link collapsed" href="pages-faq.html">
+                                    <i class="bi bi-question-circle"></i>
+                                    <span>Men Footware</span>
+                                </a>
+                            </li><!-- End F.A.Q Page Nav -->
+
+                            
+
+                        </ul>
+
+                    </aside>
+                <!-- End Sidebar-->
+                   
+                </div>
+                <div class="col-md-8 ">
+                    <div class="row" style="margin-bottom: -8%;">
+                        <div class="album py-5 bg-light">
+                            <div class="container">
+
+                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" style="width:115%">
+                                    <div class="col">
+                                        <div class="card shadow-sm" style="height: 415px;">
+                                            <img src="Cloth1.jpg" class="img-thumbnail" />
+
+                                            <div class="card-body">
+                                                <p class="card-text">
+                                                    <b>Urbane Fabulous Women Dresses</b><br />
+                                                    fabric :crepe<br />
+                                                    Sleeve Length:Three Quarter sleeves<br />
+                                                    <font color="red "> Rs.395</font> <strike>445</strike><font color="green "> 11%off</font><br />
+                                                    Rs. 50 discount on 1st order
+                                                </p>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                                    </div>
+                                                    <small class="text-muted">Cart</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card shadow-sm" style="height: 415px;">
+                                            <img src="Cloths2.jpg" class="img-thumbnail" />
+                                            <div class="card-body">
+                                                <p class="card-text">
+                                                    <b>Men T-shirt</b><br />
+                                                    fabric :crepe<br />
+                                                    <font color="red "> Rs.200</font> <strike>300</strike><font color="green "> 11%off</font><br />
+                                                    Rs. 50 discount on 1st order
+                                                </p>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                                    </div>
+                                                    <small class="text-muted">Cart</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card shadow-sm" style="height: 415px;">
+                                            <img src="Cloths3.jpg" class="img-thumbnail" style="height:180px;" />
+                                            <div class="card-body">
+                                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                                    </div>
+                                                    <small class="text-muted">Cart</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--second row column-->
+                    <div class="row" style="margin-bottom: -8%;">
+                        <div class="album py-5 bg-light">
+                            <div class="container">
+
+                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" style="width:115%">
+                                    <div class="col">
+                                        <div class="card shadow-sm" style="height: 415px;">
+                                            <img src="Shirt.jpg" class="img-thumbnail" style="height:180px;" />
+                                            <div class="card-body">
+                                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                                    </div>
+                                                    <small class="text-muted">Cart</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card shadow-sm" style="height: 415px;">
+                                            <img src="Kids1.jpg" class="img-thumbnail" />
+                                            <div class="card-body">
+                                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                                    </div>
+                                                    <small class="text-muted">Cart</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card shadow-sm" style="height: 415px;">
+                                            <img src="Kids2.jpg" class="img-thumbnail" />
+                                            <div class="card-body">
+                                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                                    </div>
+                                                    <small class="text-muted">Cart</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Third row-->
+
+                    <div class="row" style="margin-bottom: -8%;">
+                        <div class="album py-5 bg-light">
+                            <div class="container">
+
+                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" style="width:115%">
+                                    <div class="col">
+                                        <div class="card shadow-sm" style="height: 415px;">
+                                            <img src="KA.jpg" class="img-thumbnail" style="height:180px;" />
+                                            <div class="card-body">
+                                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                                    </div>
+                                                    <small class="text-muted">Cart</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card shadow-sm" style="height: 415px;">
+                                            <img src="Shoes1.jpg" class="img-thumbnail" />
+                                            <div class="card-body">
+                                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                                    </div>
+                                                    <small class="text-muted">Cart</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card shadow-sm" style="height: 415px;">
+                                            <img src="Shoes2.jpg" class="img-thumbnail" />
+                                            <div class="card-body">
+                                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                                    </div>
+                                                    <small class="text-muted">Cart</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="row" style="margin-bottom: -8%;">
+                        <div class="album py-5 bg-light">
+                            <div class="container">
+
+                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" style="width:115%">
+                                    <div class="col">
+                                        <div class="card shadow-sm" style="height: 415px;">
+                                            <img src="kA.jpg" class="img-thumbnail" style="height:180px;" />
+                                            <div class="card-body">
+                                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                                    </div>
+                                                    <small class="text-muted">Cart</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card shadow-sm" style="height: 415px;">
+                                            <img src="footware1.jpg" class="img-thumbnail" style="height:180px;" />
+                                            <div class="card-body">
+                                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                                    </div>
+                                                    <small class="text-muted">Cart</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card shadow-sm" style="height: 415px;">
+                                            <img src="Watch1.jpg" class="img-thumbnail" style="height:180px;" />
+                                            <div class="card-body">
+                                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <div class="btn-group">
+                                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                                    </div>
+                                                    <small class="text-muted">Cart</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+       
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    </body>
+</html>

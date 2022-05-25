@@ -1,0 +1,41 @@
+<html>
+<head>
+
+</head>
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+    <div id="d4"></div>
+    <script>
+
+        const Student = {
+            studfname: "Riya",
+            studlname: "Rao",
+            studrno: 1,
+            studebranch: "computer",
+            fullName: function () {
+                return this.studfname + " " + this.studlname;
+            }
+        }
+        const Marks =
+        {
+            sub1: 45,
+            sub2: 40,
+            sub3: 49,
+            Result: function () {
+                return ((this.sub1 + this.sub2 + this.sub3) / 150) * 100;
+            },
+            display: function () {
+                return Student.studrno + " " + Student.fullName() + "" + this.Result;
+
+            }
+        }
+        document.getElementById("d1").innerHTML = JSON.stringify(Student);
+        document.getElementById("d2").innerHTML = JSON.stringify(Marks);
+        document.getElementById("d3").innerHTML = Student.fullName() + "  " + Student.Result();
+        document.getElementById("d4").innerHTML = Marks.display();
+
+    </script>
+</body>
+</html>

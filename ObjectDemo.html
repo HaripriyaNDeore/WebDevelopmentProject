@@ -1,0 +1,66 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div id="d1"></div>
+        <div id="d2"></div>
+        <div id="d3"></div>
+        <div id="d4"></div>
+        <div id="d5"></div>
+        <div id="d6"></div>
+        <div id="d7"></div>
+        <script>
+            function add() {
+                //code
+            }
+
+            var emp = {};
+            emp.Id = 1;
+            emp.Name = "User2";
+            //call(),bind(),apply()
+            const employee = {
+
+                firstname: "TestUser1",
+                lastname: "Test 1",
+                age: 30,
+                fname: function () {
+                    return this.firstname + " "+this.lastname;
+                },
+                fullName: function (city, country) {
+                    return this.firstname + " " + this.lastname + " " + city + " " + country;
+                }
+            }
+            const member = {
+                firstname: "User1",
+                lastname: "User"
+            }
+            const product =
+            {
+                id: 1,
+                name: "mouse",
+                price: 800,
+                discountAmount: function () {
+                    return this.price * 0.10;
+                },
+                display: function () {
+                    //return this.id + " " + this.name + "Discounted amount is" + this.discountAmount;
+                    return this.price - this.discountAmount();
+                }
+            }
+
+            console.log(employee.firstname + employee["lastname"]);
+            console.log(product["name"] + product.price);
+            console.log(emp.Name);
+            console.log(employee.firstname + employee["lastname"]);
+            document.getElementById("d1").innerHTML = JSON.stringify(product)
+            document.getElementById("d2").innerHTML = JSON.stringify(employee)
+            document.getElementById("d3").innerHTML = product.name + " discount price is " + product.discountAmount();
+            document.getElementById("d4").innerHTML = product.display();
+            document.getElementById("d5").innerHTML = employee.fullName.call(member, "pune", "India");
+            document.getElementById("d6").innerHTML = employee.fullName.apply(member, ["NAshik", "India"]);
+            let empinfo = employee.fname.bind(member);
+            document.getElementById("d7").innerHTML = empinfo();
+        </script>
+    </body>
+</html>
